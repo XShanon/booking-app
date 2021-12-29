@@ -15,7 +15,7 @@ func main() {
 
 	bookings := []string{}
 
-	for {
+	for remainingTickets > 0 && len(bookings) < conferenceTickets {
 		var firstName string
 		var lastName string
 		var email string
@@ -62,6 +62,5 @@ func main() {
 			fmt.Println("we are sorry, we have only", remainingTickets, "tickets left")
 			continue
 		}
-
 	}
 }
